@@ -1,56 +1,5 @@
-# ScrollFade
+// ScrollFade 0.1
 
-ScrollFade is used to fade elements in and out while scrolling through a page.
-Tag any elements you want to fade with the class `scrollFade` and add the following CSS attributes and JS to your website:
-
-Vist [here](https://stark-kouprey.cloudvent.net/) for an example, or download this repository.
-
-### CSS
-```
-.scrollFade {
-	opacity: 1;
-	pointer-events: all;
-}
-
-.scrollFade--hidden {
-	opacity: 0;
-	pointer-events: none;
-}
-
-.scrollFade--visible {
-	opacity: 1;
-	pointer-events: all;
-}
-
-.scrollFade--animate {
-	transition: opacity 0.4s ease-in-out;
-}
-```
-
-### SCSS
-```
-.scrollFade {
-	opacity: 1;
-	pointer-events: all;
-
-	&--hidden {
-		opacity: 0;
-		pointer-events: none;
-	}
-
-	&--visible {
-		opacity: 1;
-		pointer-events: all;
-	}
-
-	&--animate {
-		transition: opacity 0.4s ease-in-out;
-	}
-}
-```
-
-### JavaScript
-```
 var fadeElements = document.getElementsByClassName('scrollFade');
 
 function scrollFade() {
@@ -85,4 +34,3 @@ window.addEventListener('resize', scrollFade);
 document.addEventListener('DOMContentLoaded', function() {
     scrollFade();
 });
-```

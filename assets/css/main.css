@@ -1,0 +1,62 @@
+body {
+	padding: 100px;
+	font-family: Arial;
+}
+
+h1 {
+	text-align: center;
+}
+
+.items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+
+.item {
+	display: flex;
+	padding-bottom: 56.25%;
+	background: #b5b4b4;
+}
+
+.item--wide {
+	grid-column: 1/3;
+}
+
+
+/*--- ScrollFade Specific ---*/
+
+.scrollFade {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.scrollFade--hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.scrollFade--visible {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.scrollFade--animate {
+	transition: opacity 0.4s ease-in-out;
+}
+
+/*------*/
+
+@media(max-width: 750px) {
+	body {
+		padding: 100px 25px;
+	}
+
+	.items {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.item--wide {
+		grid-column: 1;
+	}
+}

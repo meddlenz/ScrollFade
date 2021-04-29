@@ -1,6 +1,6 @@
 # ScrollFade
 
-ScrollFade is used to fade elements in and out while scrolling through a page.
+ScrollFade is used to fade elements in and out of view while scrolling through a page.
 Tag any elements you want to fade with the class `scrollFade` and add the following CSS attributes and JS to your website:
 
 Vist [here](https://stark-kouprey.cloudvent.net/) for an example, or download this repository.

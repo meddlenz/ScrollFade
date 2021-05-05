@@ -5,6 +5,8 @@ Tag any elements you want to fade with the class `scrollFade` and add the follow
 
 Vist [here](https://stark-kouprey.cloudvent.net/) for an example, or download this repository.
 
+Feel free to add a PR for improvements
+
 ### CSS
 ```css
 .scrollFade {
